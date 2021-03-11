@@ -47,7 +47,7 @@ public class Categorie_cours {
     
     @Override
     public String toString() {
-        return "Categorie_cours{" + "id=" + id + ", type=" + type + "}\n";
+        return "id Categorie ="+id+"     Type="+type;
     }
 
     

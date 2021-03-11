@@ -28,9 +28,10 @@ public class Cours {
         this.duree = duree;
     }
 
-    public Cours(int id_formation, String titre, String description, String duree) {
+    public Cours(int id_cours, String titre, int id_formation,String description, String duree) {
         this.id_formation = id_formation;
         this.titre = titre;
+        this.id_formation = id_formation;
         this.description = description;
         this.duree = duree;
     }

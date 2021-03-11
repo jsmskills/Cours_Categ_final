@@ -25,7 +25,8 @@ public class Workshop_Categorie extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocumentCategorie.fxml"));
+      //  Parent root = FXMLLoader.load(getClass().getResource("FXMLDocumentCategorie.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("fxml_categorie.fxml"));
         
         Scene scene = new Scene(root);
         

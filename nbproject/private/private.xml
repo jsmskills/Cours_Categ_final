@@ -3,14 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/Workshop_Cours.java</file>
             <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Service/ServiceCours.java</file>
-            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Services/IServiceCours.java</file>
-            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Entities/Cours.java</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/Client_espaceController.java</file>
             <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/Fxml_coursController.java</file>
-            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Services/IServiceCategorie.java</file>
             <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Service/ServiceCategorie.java</file>
             <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Entities/Categorie_cours.java</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Services/IServiceCategorie.java</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/fxml_categorie.fxml</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/client_espace.fxml</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/Fxml_categorieController.java</file>
+            <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/fxml_cours.fxml</file>
             <file>file:/C:/Users/A/Documents/NetBeansProjects/workshop_Cours/src/Gui/Workshop_Categorie.java</file>
         </group>
     </open-files>

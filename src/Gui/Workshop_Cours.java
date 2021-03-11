@@ -55,27 +55,28 @@ public class Workshop_Cours extends Application {
         //Fin Affichage Cateogire
         
         //Debut Ajout Categorie
-        //Categorie_cours categorie_cours = new Categorie_cours("Web");
-        //serviceCategorie.AddCategorie(categorie_cours);
+        Categorie_cours categorie_cours = new Categorie_cours("IOT");
+        serviceCategorie.AddCategorie(categorie_cours);
 
-       // Categorie_cours categorie_cours1 = new Categorie_cours("Security");
-       // serviceCategorie.AddCategorie(categorie_cours1);
+       Categorie_cours categorie_cours1 = new Categorie_cours("Security");
+       serviceCategorie.AddCategorie(categorie_cours1);
 
-        //Categorie_cours categorie_cours2= new Categorie_cours("Mobile");
-        //serviceCategorie.AddCategorie(categorie_cours2);
+        Categorie_cours categorie_cours2= new Categorie_cours("Mobile");
+        serviceCategorie.AddCategorie(categorie_cours2);
         
         //Fin Ajout Categorie
         
         
         //Recuperer categorie cours selon id
-        Categorie_cours categorieCours = serviceCategorie.getCategorieCoursById(12);
+        Categorie_cours categorieCours = serviceCategorie.getCategorieCoursById(30);
                 System.out.println("Categorie by id est =="+categorieCours);
 
         //Modifier le categorie cours courant
-        categorieCours.setType("DEv");
-        serviceCategorie.modifyCategorie(categorieCours);
-        
-        
+        categorieCours.setType("Android");
+       serviceCategorie.modifyCategorie(categorieCours);
+         System.out.println("Categorie by id est =="+categorieCours);
+
+      
         
         /*******CRUD COURS**********/
         ServiceCours s = new ServiceCours();
@@ -84,21 +85,25 @@ public class Workshop_Cours extends Application {
          List<Cours> cours = s.AfficherCours() ;
 
           //Recuperer  cours selon id
-        Cours coursById = s.getCoursById(36);
-                System.out.println("Cours by id est =="+coursById);
+        Cours coursById = s.getCoursById(50);
+                System.out.println("Cours by id est ="+coursById);
 
-        //Modifier le categorie cours courant
-        coursById.setDescription("Python");
-        coursById.setTitre("Web Django");
-        coursById.setDuree("2010-05-06");
-        s.modifyCours(coursById);
+        //Modifier le cours courant
+        coursById.setDescription("COURS modifié");
+        coursById.setTitre("javafx");
+        coursById.setDuree("2022-07-08");
+        //s.modifyCours(coursById);
         
         
-        Cours c1 = new Cours(34,1,"aaaaaaa","abcd","2heures"); 
-        //sc.modifyCours(c1);
+        Cours c1 = new Cours(49,1,"Android ","c++","3heures"); 
+        //s.modifyCours(c1);
+        System.out.println("Cours by id est ="+coursById);
+
         //s.DeleteCours(c1);
+        
         for (Cours c: cours){
-            System.out.println("cous="+c.toString());
+           ; System.out.println("cours="+c.toString());
+           
         }     
         
               

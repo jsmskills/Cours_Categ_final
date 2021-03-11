@@ -20,7 +20,10 @@ public interface IServiceCours {
     public List<Cours>AfficherCours() throws SQLException; 
     public void DeleteCours(Cours c) ;
     public void modifyCours(Cours cours );
-        public Cours getCoursById(int id);
+    public Cours getCoursById(int id);
+        public int getNbrCours() ;
+            public int getNbrEvaluation() ;
+
 }
     
 

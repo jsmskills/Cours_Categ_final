@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Images - V2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com/">
+  <link rel="dns-prefetch" href="//use.fontawesome.com/">
+  <link rel="dns-prefetch" href="//code.jquery.com/">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="//ajax.cloudflare.com">
+  <link rel="dns-prefetch" href="//unpkg.com">
+  <link rel="dns-prefetch" href="//cdn.nohat.cc">
+  <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="csrf-token" content="khbSAiQC65S6cuNsA6wB+hTW3HGKQZi0B9ndB7bcP2TSq2Tk5RuRrTfyAfyVifV2xkMzRioJBgNSdR+/hhRsuBvX3/vnLywZT35q6WBlynLJXrHfo11gcBn7tQN8j0Q8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+  <script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- PopAds.net Popunder Code for findandfound.ga -->
+  <script type="text/javascript" data-cfasync="false">
+    /*<![CDATA[/* */
+    var _pop = _pop || [];
+    _pop.push(['siteId', 3618060]);
+    _pop.push(['minBid', 0]);
+    _pop.push(['popundersPerIP', 0]);
+    _pop.push(['delayBetween', 0]);
+    _pop.push(['default', false]);
+    _pop.push(['defaultPerDay', 0]);
+    _pop.push(['topmostLayer', false]);
+    (function() {
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      var s = document.getElementsByTagName('script')[0]; 
+      pa.src = '//c1.popads.net/pop.js';
+      pa.onerror = function() {
+        var sa = document.createElement('script'); sa.type = 'text/javascript'; sa.async = true;
+        sa.src = '//c2.popads.net/pop.js';
+        s.parentNode.insertBefore(sa, s);
+      };
+      s.parentNode.insertBefore(pa, s);
+    })();
+    /*]]>/* */
+  </script>
+  <!-- PopAds.net Popunder Code End -->
+
+  <script type="text/javascript">
+    window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+      function disabledEvent(e){
+        if (e.stopPropagation){
+          e.stopPropagation();
+        } else if (window.event){
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+  </script>
+</head>
+<body oncontextmenu="return false;">
+  <div class="container">
+   <div class="row">
+     <div class="col-12 pt-3">
+      <div class="card">
+        <div class="card-header">
+          notes
+        </div>
+        <div class="card-body">
+          <ul class="mt-3">
+            <li>You can not right click on this page, let click on download button to open the image in new tab. The first click may not work because of ads appear, but let try again right after that</li>
+            <li>The image only availale in 5 minutes. If the image with message: Image Expired => try refresh this page / press Ctrl+F5 / find again</li>
+            <li>If you want skip advertising, please become a VIP member</li>
+          </ul>
+        </div>
+      </div>     
+      
+    </div>   
+    <div class="col-md-12 abc text-center">
+       
+      <a class="btn btn-primary my-3 btn-block" download="Z14XEkVG9J.jpg" href="/image/YON1Z0TBBtEXpJ1GVfQQgsMCd2gqF4xwurS3dyQHsK7c%2BOzgbBbH0pXIEdMCiwFmuXv7xSVVkx107prmDDwzWypzMEnbPpxVcDevTVa7jpyWIZZ1Iyr%2FYHdfR5hbhhnpLwTuO7Ybh3ggBD0d9cUXhY1d28N%2FTCC8zTKzg62fSF3HImhiEl1xPxL9P4qzOr0gI8ibTqFOxTJAXn8dgG5xDV%2F1eeywvM57u1Owys39B9RO5rkNwl%2B0DPPtwbDlR%2BI3--nh.jpg" target="_blank">Download</a>   
+      <div class="alert alert-info">
+        Want original/editable file (EPS, JPG)? Price from 0.11 USD/img; 4.6 USD/video. Login -> Click on the profile image -> Go to HAT manager tab.
+      </div>
+      	   
+       <img style="width: 100%;max-width: 100%" src="/dpl/YON1Z0TBBtEXpJ1GVfQQgsMCd2gqF4xwurS3dyQHsK7c%2BOzgbBbH0pXIEdMCiwFmuXv7xSVVkx107prmDDwzWypzMEnbPpxVcDevTVa7jpyWIZZ1Iyr%2FYHdfR5hbhhnpLwTuO7Ybh3ggBD0d9cUXhY1d28N%2FTCC8zTKzg62fSF3HImhiEl1xPxL9P4qzOr0gI8ibTqFOxTJAXn8dgG5xDV%2F1eeywvM57u1Owys39B9RO5rkNwl%2B0DPPtwbDlR%2BI3"/>	
+     		
+  </div>    
+</div>
+<div class="card border-0">
+  <ins class="adsbygoogle"
+  style="display:block"
+  data-ad-format="autorelaxed"
+  data-ad-client="ca-pub-625691251"
+  data-ad-slot="91292412"></ins>
+  <script>   
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+</div>
+</body>
+<footer>
+  <script type="text/javascript">
+    function adb_warning() {
+      var n = "<div class='alert alert-danger d-block mt-3 col-12 text-center'><b>You are using AdBlock</b></div><p>Let disable AdBlock on this website to continue use helpful tools.</p><p>If you don't like Advertisement, please help us better by become VIP</p>"; - 1 != (img = getHelpImg()) ? n += '<img src="' + img + '" style="display:block;max-width:100%;margin: 0 auto;" />' : n += '<div class="dialog-buttons"><a href="' + e + '">' + t + "</a></div>", $(".abc").html(n)
+    }
+    function getHelpImg() {
+      var e = window.navigator.userAgent,
+      o = document.location.protocol + "//nohat.cc/";
+      return -1 < e.indexOf("Chrome/") ? o += "/assets/chromeadblock.gif" : -1 < e.indexOf("Firefox/") ? o += "/assets/firefoxadblock.gif" : o = -1, o
+    }
+  </script>
+  <script src="https://reservoirjetski.b-cdn.net/abc/advertisement.js?v=2"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var t = $("ins.adsbygoogle").html();
+      if(t==''){adb_warning();}  
+    })
+  </script>
+</footer>
+</html>

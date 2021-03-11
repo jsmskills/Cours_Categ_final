@@ -40,8 +40,8 @@ public class ServiceCours implements IServiceCours{
         int idFormation = 1;
         try {
             String sql = "INSERT INTO cours (id_formation,Titre,description,duree)VALUES(?,?,?,?)";
-            pst = cnx.prepareStatement(sql);
-            pst.setInt(1, idFormation);
+            pst = cnx.prepareStatement(sql);// intialisation de la requete
+            pst.setInt(1, idFormation);// pour mettre dans la bd l'id_formation dans la 1ere colonne 
             pst.setString(2, c.getTitre());
             pst.setString(3,c.getDescription());
             pst.setString(4, c.getDuree());
@@ -58,24 +58,24 @@ public class ServiceCours implements IServiceCours{
     ObservableList<Cours>obList = FXCollections.observableArrayList();
     @Override
     public ObservableList<Cours> AfficherCours() throws SQLException {
-       
+        obList.clear();
             Statement stm =cnx.createStatement();
         
         String query ="select * from `cours` ";
             
-            ResultSet rst = stm.executeQuery(query);
+            ResultSet rst = stm.executeQuery(query); // l'execution de la requete (rst => les lignes dans la table )
                             Cours C = new Cours();
 
             while (rst.next()) {
                 
-                C.setId_formation(rst.getInt("id_formation"));
-                C.setId_cours(rst.getInt("id_cours"));
-                C.setTitre(rst.getString("Titre"));
-                C.setDuree(rst.getString("duree"));
-                C.setDescription(rst.getString("description"));
+                int id_formation = rst.getInt("id_formation"); // recuperer de la base de données 
+               int id_cours = rst.getInt("id_cours"); //mm chose
+               String titre = rst.getString("Titre"); // mm chose 
+                String duree  = rst.getString("duree"); // mm chose 
+                String desc = rst.getString("description"); // mm chose 
             
-                obList.add(C);
-
+                obList.add(new Cours(id_cours,id_formation,titre,desc,duree)); // mettre ces valeurs de type "observalble list" dans table view oblist 
+                    System.out.println("oblist)===>"+obList);
             }
             
         return obList;
@@ -84,7 +84,7 @@ public class ServiceCours implements IServiceCours{
 @Override
     public void DeleteCours(Cours c) {
        int n=0;
-		PreparedStatement st;
+		PreparedStatement st; // initialisation
 		try {
 			
 			
@@ -130,13 +130,13 @@ public class ServiceCours implements IServiceCours{
     
     @Override
     public Cours getCoursById(int id) {
-               Cours c = new Cours();
+               Cours c = new Cours(); // vide
         try {
-            String sql = "SELECT * FROM cours WHERE id_cours ="+id;
+            String sql = "SELECT * FROM cours WHERE id_cours ="+id; //pour recuperer le cours selon son id = > si on met "getcoursbyid(5)" le cours de id 5 sera affciché
            Statement stm = cnx.createStatement();
             ResultSet rst= stm.executeQuery(sql);
             while(rst.next()) {
-                c.setDescription(rst.getString("description"));
+                c.setDescription(rst.getString("description"));// mettre dans c 
                 c.setTitre(rst.getString("titre"));
                 c.setId_formation(1);
                 c.setId_cours(rst.getInt("id_cours"));
@@ -148,5 +148,40 @@ public class ServiceCours implements IServiceCours{
         }
         return c;
     }
+
+  @Override
+    public int getNbrCours() {
+        String sql="SELECT COUNT(*) FROM cours";
+        ResultSet rs;
+        int countIdRec=0;
+        try {
+            PreparedStatement st= cnx.prepareStatement(sql);
+			ResultSet res= st.executeQuery(); 
+                        while(res.next()) {
+                           countIdRec= res.getInt(1); // nombre de cours selon l'id (1ere collone)
+                        }
+        }catch(Exception e) {
+            e.printStackTrace(); 
+        }
+        return countIdRec;
+    }
+    
+  @Override
+    public int getNbrEvaluation() {
+        String sql="SELECT COUNT(*) FROM evaluation";
+        int v=0;
+        try {
+            PreparedStatement st= cnx.prepareStatement(sql);
+			ResultSet res= st.executeQuery(); 
+                        while(res.next()) {
+                           v= res.getInt(1);
+                        }
+        }catch(Exception e) {
+            e.printStackTrace();
+        }
+        return v;
+    }
+
+
     
 }
