@@ -22,14 +22,14 @@ import javafx.stage.Stage;
  * @author A
  */
 public class Workshop_Categorie extends Application {
-    
+
     @Override
     public void start(Stage stage) throws Exception {
-      //  Parent root = FXMLLoader.load(getClass().getResource("FXMLDocumentCategorie.fxml"));
+        //  Parent root = FXMLLoader.load(getClass().getResource("FXMLDocumentCategorie.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("fxml_categorie.fxml"));
-        
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -37,20 +37,15 @@ public class Workshop_Categorie extends Application {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args)throws ClassNotFoundException, SQLException {
-        
-        ServiceCategorie cs= new ServiceCategorie();
-        List<Categorie_cours> categories = cs.AfficherCategorie() ;
-        for (Categorie_cours cc: categories){
-            System.out.println("categories ="+cc.toString());
-        }     
-          
-        
-        
-        
-        
-        
+    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+
+        ServiceCategorie cs = new ServiceCategorie();
+        List<Categorie_cours> categories = cs.AfficherCategorie();
+        for (Categorie_cours cc : categories) {
+            System.out.println("categories =" + cc.toString());
+        }
+
         launch(args);
     }
-    
+
 }

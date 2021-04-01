@@ -105,12 +105,23 @@
       </Pane>
       <Pane fx:id="paneButton1" prefHeight="82.0" prefWidth="855.0">
          <children>
-            <Button fx:id="btnA" layoutX="188.0" layoutY="20.0" mnemonicParsing="false" onAction="#affichercours" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Historique" textFill="#f8f8f8">
+            <Button fx:id="btnA" layoutX="150" layoutY="20.0" mnemonicParsing="false" onAction="#affichercours" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Historique" textFill="#f8f8f8">
                <font>
                   <Font name="Comic Sans MS" size="13.0" />
                </font>
             </Button>
             <Button fx:id="btnStat" layoutX="457.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleStatostoqie" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Statistiques" textFill="#f8f8f8">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Button>
+            
+            <Button fx:id="btnca" layoutX="300" layoutY="20.0" mnemonicParsing="false" onAction="#affichercat" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="categorie" textFill="#f8f8f8">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnclient" layoutX="10" layoutY="20.0" mnemonicParsing="false" onAction="#afficherclient" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="espace_client" textFill="#f8f8f8">
                <font>
                   <Font name="Comic Sans MS" size="13.0" />
                </font>

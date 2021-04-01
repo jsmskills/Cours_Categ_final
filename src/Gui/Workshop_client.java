@@ -22,11 +22,11 @@ import javafx.stage.Stage;
  *
  * @author A
  */
-public class Workshop_Cours extends Application {
+public class Workshop_client extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("fxml_cours.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("client_espace.fxml"));
         
         Scene scene = new Scene(root);
         

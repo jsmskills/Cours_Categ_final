@@ -6,6 +6,7 @@
 package Services;
 
 import Entities.Categorie_cours;
+import Entities.Cours;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -19,5 +20,5 @@ public interface IServiceCategorie {
 
     //Get By id === n7oto id kif n3ayto lel fonction yraj3lna categorie selon id heka
     public Categorie_cours getCategorieCoursById(int id);
-    
+      public void DeleteCours(Categorie_cours c) ;
 }

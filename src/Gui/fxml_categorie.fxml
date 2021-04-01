@@ -15,16 +15,30 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.Fxml_categorieController">
    <children>
+       
+             <Pane fx:id="pane3" prefHeight="525.0" prefWidth="848.0">
+         <children>
+            <TableView fx:id="t" layoutX="11.0" layoutY="149.0" prefHeight="454.0" prefWidth="827.0" stylesheets="@../Utils/tables.css">
+              <columns>
+                <TableColumn fx:id="type" prefWidth="375.1999759674072" text="type" />
+                
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="txt_filter" layoutX="281.0" layoutY="124.0" onKeyPressed="#filterAction" prefHeight="25.0" prefWidth="201.0" />
+         </children>
+      </Pane>
       <Pane fx:id="pnltable" layoutX="2.0" layoutY="77.0" prefHeight="449.0" prefWidth="846.0" />
       <Pane fx:id="pnlModif" layoutX="2.0" layoutY="80.0" prefHeight="480.0" prefWidth="914.0">
          <children>
-            <JFXTextField fx:id="txt_modif_cours" focusColor="#76aae3" labelFloat="true" layoutX="370.0" layoutY="94.0" prefHeight="25.0" prefWidth="282.0" promptText="Cours" />
-            <JFXTextArea fx:id="txt_desc_modif" focusColor="#76aae3" labelFloat="true" layoutX="378.0" layoutY="172.0" prefHeight="185.0" prefWidth="271.0" promptText="Description" />
+            <JFXTextField fx:id="txt_modif_cours" focusColor="#76aae3" labelFloat="true" layoutX="370.0" layoutY="94.0" prefHeight="25.0" prefWidth="282.0" promptText="type" />
             <JFXButton fx:id="btnModif" layoutX="387.0" layoutY="420.0" onAction="#modif" prefHeight="46.0" prefWidth="253.0" style="-fx-background-color: #76aae3; -fx-text-fill: white;" text="Valider" />
-            <JFXDatePicker fx:id="date_picker_modif" defaultColor="#76aae3" layoutX="428.0" layoutY="378.0" />
+          
             <ImageView fitHeight="240.0" fitWidth="282.0" layoutX="14.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Utils/images/modif.jpg" />
@@ -43,8 +57,8 @@
                   </Button>
                   <Label layoutY="14.0" prefHeight="43.0" prefWidth="282.0" style="-fx-text-fill: #76aae3; -fx-font-size: 30px; -fx-alignment: CENTER;" text="Cours" />
                   <TextField id="txt1" fx:id="txt11" layoutX="52.0" layoutY="72.0" prefHeight="25.0" prefWidth="190.0" promptText="Ajouter votre cours" />
-                  <TextArea id="txt2" fx:id="txt21" layoutX="52.0" layoutY="115.0" prefHeight="67.0" prefWidth="190.0" promptText="Insérer une description" />
-                  <DatePicker id="date1" fx:id="date1" layoutX="54.0" layoutY="211.0" />
+            
+                
                </children>
             </Pane>
             <ImageView fx:id="pic1" fitHeight="373.0" fitWidth="386.0" layoutX="426.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
@@ -96,17 +110,25 @@
       </AnchorPane>
       <Pane fx:id="paneButton1" prefHeight="82.0" prefWidth="855.0">
          <children>
-            <Button fx:id="btnA" layoutX="188.0" layoutY="20.0" mnemonicParsing="false" onAction="#afficherCategorie" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Liste Catégories" textFill="#f8f8f8">
+            <Button fx:id="btnA" layoutX="150" layoutY="20.0" mnemonicParsing="false" onAction="#afficherCategorie" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Historique" textFill="#f8f8f8">
                <font>
                   <Font name="Comic Sans MS" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="btnStat" layoutX="456.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleStatostoqie" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="Statistiques" textFill="#f8f8f8">
+            
+            
+            <Button fx:id="btnca" layoutX="290" layoutY="20.0" mnemonicParsing="false" onAction="#affichercat" prefHeight="43.0" prefWidth="201.0" style="-fx-background-color: white; -fx-text-fill: black;" text="cours" textFill="#f8f8f8">
                <font>
                   <Font name="Comic Sans MS" size="13.0" />
                </font>
             </Button>
+            
          </children>
       </Pane>
+       <StackPane fx:id="stackPane" layoutX="10.0" layoutY="83.0" prefHeight="470.0" prefWidth="778.0">
+         <children>
+            <Pane fx:id="pnlStat" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </StackPane>
    </children>
 </AnchorPane>
